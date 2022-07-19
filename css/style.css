@@ -58,16 +58,42 @@ body {
   text-align: center;
   padding: 0 15px;
 }
+
 .nav > a {
   display: block;
 }
-.nav-link:not(:last-child) {
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links:nth-child(n + 2):not(:last-child) {
   padding-right: 46px;
+}
+
+.nav-link {
+  display: block;
 }
 
 .contacts {
   display: flex;
 }
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--contact-color);
+  cursor: pointer;
+  display: inline-flex;
+  align-self: center;
+}
+
 .contact-box:not(:last-child) {
   margin-right: 30px;
 }
@@ -229,7 +255,7 @@ body {
   font-size: 16px;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .crewmate-box {
   background-color: #ffffff;
@@ -378,6 +404,7 @@ body {
   font-family: var(--font-family);
   font-size: 14px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   line-height: calc(16.41 / 14);
   color: #ffffff;
   padding-bottom: 20px;
@@ -487,13 +514,6 @@ body {
 
 /* icons */
 
-.contact-icon {
-  display: inline-flex;
-  margin-right: 10px;
-  fill: var(--contact-color);
-  align-self: center;
-  cursor: pointer;
-}
 .icon-background {
   background-color: #f5f4fa;
   border-radius: 4px;
