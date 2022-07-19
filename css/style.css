@@ -65,9 +65,6 @@ body {
   padding-right: 46px;
 }
 
-/* .contact-link:not(:last-child) {
-  padding-right: 50px;
-} */
 .contacts {
   display: flex;
 }
@@ -108,6 +105,12 @@ body {
   justify-content: center;
   display: flex;
   padding: 200px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/backgroundimg.jpg);
 }
 
 .h1 {
@@ -230,9 +233,77 @@ body {
 }
 .crewmate-box {
   background-color: #ffffff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 .crewmate-box:not(:last-child) {
   margin-right: 30px;
+}
+.personal-socialmedia {
+  display: flex;
+  justify-content: center;
+}
+.social-circle {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  padding: 12px;
+}
+.social-circle:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.social-circle:hover .social-logo {
+  fill: #ffffff;
+  cursor: pointer;
+}
+.social-circle:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+.our-clients-section {
+  width: 1600px;
+  background-color: #ffffff;
+}
+.our-clients {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+.client-box {
+  display: flex;
+  border: solid #afb1b8 1px;
+  border-radius: 4px;
+  width: 172px;
+  height: 92px;
+  justify-content: center;
+}
+.client-box:not(:last-child) {
+  margin-right: 30px;
+}
+.client-container {
+  display: flex;
+  width: 106px;
+  height: 60px;
+  justify-content: center;
+  align-self: center;
+}
+.client-logo {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  fill: var(--contact-color);
+}
+.client-box:hover .client-logo {
+  fill: var(--hover-color);
+  cursor: pointer;
+}
+.client-box:hover {
+  border: solid var(--hover-color) 1px;
+  cursor: pointer;
 }
 /* footer */
 .footer-section {
@@ -272,8 +343,50 @@ body {
   display: block;
   padding-top: 9px;
 }
+.footer-box {
+  display: flex;
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+}
+.footer-social-logo {
+  fill: #ffffff;
+}
+.footer-social-circle:hover .footer-social-logo {
+  fill: #ffffff;
+  cursor: pointer;
+}
+.footer-social-circle:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+.footer-social-circle:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-column:not(:last-child) {
+  padding-right: 70px;
+}
+
+.footer-column-title {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16.41 / 14);
+  color: #ffffff;
+  padding-bottom: 20px;
+}
 
 /* portfolio */
+.button-section {
+  width: 1600px;
+}
 .portfolio-section {
   width: 1600px;
 }
@@ -281,17 +394,22 @@ body {
   background-color: var(--hover-color);
   color: #ffffff;
   border: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.08);
 }
 .button:active {
   background-color: var(--hover-color);
   color: #ffffff;
   border: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.08);
 }
 .buttons {
   padding: 94px 15px 50px 15px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
   display: flex;
-  width: 1200px;
   background-color: #ffffff;
 }
 .button:not(:last-child) {
@@ -314,6 +432,11 @@ body {
 
 .card {
   background-color: #ffffff;
+}
+.card:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 .project:not(:last-child) {
   padding-right: 30px;
@@ -352,7 +475,6 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 .project-list-box {
   width: 1200px;
@@ -377,4 +499,8 @@ body {
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 30px;
+}
+
+.social-logo {
+  fill: #afb1b8;
 }
