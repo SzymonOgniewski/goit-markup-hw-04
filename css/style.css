@@ -24,6 +24,16 @@ body {
   margin-right: auto;
 }
 /* header */
+.contact-box {
+  display: flex;
+}
+.contact-icon {
+  display: inline-flex;
+  margin-right: 10px;
+  fill: var(--contact-color);
+  align-self: center;
+}
+
 .header-section {
   width: 1600px;
   border-bottom: solid #ececec 1px;
@@ -55,13 +65,25 @@ body {
   padding-right: 46px;
 }
 
-.contact-link:not(:last-child) {
+/* .contact-link:not(:last-child) {
   padding-right: 50px;
+} */
+.contacts {
+  display: flex;
 }
-.menu > .link:hover {
+.contact-box:not(:last-child) {
+  margin-right: 30px;
+}
+.link:hover {
   color: var(--hover-color);
 }
-.menu > .link {
+.contact-box:hover svg {
+  fill: var(--hover-color);
+}
+.contact-box:hover a {
+  color: var(--hover-color);
+}
+.link {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
@@ -69,7 +91,7 @@ body {
   color: var(--main-color);
   letter-spacing: 0.02em;
 }
-.contacts > .contact {
+.contact {
   color: var(--contact-color);
   font-family: var(--font-family);
   font-weight: 500;
@@ -339,4 +361,20 @@ body {
 }
 .project:nth-child(-n + 6) {
   padding-bottom: 30px;
+}
+
+/* icons */
+
+.contact-icon {
+  display: inline-flex;
+  margin-right: 10px;
+  fill: var(--contact-color);
+  align-self: center;
+  cursor: pointer;
+}
+.icon-background {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
