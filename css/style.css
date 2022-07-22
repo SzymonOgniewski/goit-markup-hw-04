@@ -286,7 +286,15 @@ body {
   fill: #ffffff;
   cursor: pointer;
 }
+.social-circle:active .social-logo {
+  fill: #ffffff;
+  cursor: pointer;
+}
 .social-circle:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+.social-circle:active {
   background-color: var(--hover-color);
   cursor: pointer;
 }
@@ -327,7 +335,15 @@ body {
   fill: var(--hover-color);
   cursor: pointer;
 }
+.client-box:active .client-logo {
+  fill: var(--hover-color);
+  cursor: pointer;
+}
 .client-box:hover {
+  border: solid var(--hover-color) 1px;
+  cursor: pointer;
+}
+.client-box:active {
   border: solid var(--hover-color) 1px;
   cursor: pointer;
 }
@@ -389,10 +405,19 @@ body {
   fill: #ffffff;
   cursor: pointer;
 }
+.footer-social-circle:active .footer-social-logo {
+  fill: #ffffff;
+  cursor: pointer;
+}
 .footer-social-circle:hover {
   background-color: var(--hover-color);
   cursor: pointer;
 }
+.footer-social-circle:active {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
 .footer-social-circle:not(:last-child) {
   margin-right: 10px;
 }
@@ -461,6 +486,11 @@ body {
   background-color: #ffffff;
 }
 .card:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+.card:active {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
   cursor: pointer;
